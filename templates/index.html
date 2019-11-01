@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>MITH-Demo</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{ url_for('static',filename='bootstrap.min.css') }}">
+    <link href="{{ url_for('static',filename="roboto") }}" rel="stylesheet">
+
+    <style>
+        html, body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="container-fluid text-center">
+    <h1><b>S</b>uper <b>S</b>afe <b>L</b>istening 🔐</h1>
+
+    <br>
+
+    <img src="{{ url_for('static',filename='ohno.gif') }}" class="img-fluid rounded-top" alt="Oh no">
+</div>
+
+<br>
+
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="display-3">Registration</h1>
+        <p class="lead">Please register yourself in order to use our services</p>
+        <hr class="my-2">
+        <form action="" method="post">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text"
+                       class="form-control" name="username" id="username" aria-describedby="userNameHelp"
+                       placeholder="Username">
+                <small id="userNameHelp" class="form-text text-muted">Place your username here.</small>
+            </div>
+            <div class="form-group">
+                <label for="tel">Telephone-Number</label>
+                <input type="tel"
+                       class="form-control" name="tel" id="tel" aria-describedby="telHelp"
+                       placeholder="Telephone-Number">
+                <small id="telHelp" class="form-text text-muted">Place your Phone-Number here.</small>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp"
+                       placeholder="Email">
+                <small id="emailHelp" class="form-text text-muted">Place your E-Mail address here.</small>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+                <small id="passwordHelp" class="form-text text-muted">Please think of an strong password.</small>
+            </div>
+            <p class="lead">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </p>
+        </form>
+    </div>
+</div>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="{{ url_for('static',filename='jquery-3.3.1.slim.min.js') }}"></script>
+<script src="{{ url_for('static',filename='popper.min.js') }}" ></script>
+<script src="{{ url_for('static',filename='bootstrap.min.js') }}"></script>
+</body>
+</html>
